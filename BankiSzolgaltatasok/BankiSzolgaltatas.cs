@@ -15,6 +15,6 @@ namespace BankiSzolgaltatasok
             this.tulajdonos = tulajdonos;
         }
 
-        internal Tulajdonos Tulajdonos { get => tulajdonos; }
+        public Tulajdonos Tulajdonos { get => tulajdonos; }
     }
 }

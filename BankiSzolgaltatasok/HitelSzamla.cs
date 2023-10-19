@@ -10,7 +10,7 @@ namespace BankiSzolgaltatasok
     {
         private int hitelKeret;
 
-        public HitelSzamla(int hitelKeret, Tulajdonos tulajdonos) : base(tulajdonos)
+        public HitelSzamla(Tulajdonos tulajdonos, int hitelKeret) : base(tulajdonos)
         {
             this.hitelKeret = hitelKeret;
         }
@@ -19,7 +19,7 @@ namespace BankiSzolgaltatasok
 
         public override bool Kivesz(int osszeg)
         {
-            return this.hitelKeret > osszeg;
+            return this.hitelKeret >= osszeg;
         }
     }
 }
