@@ -8,9 +8,9 @@ namespace BankiSzolgaltatasok
 {
     public abstract class Szamla : BankiSzolgaltatas
     {
-        private int aktualisEgyenleg;
+        protected int aktualisEgyenleg;
 
-        protected int AktualisEgyenleg { get => aktualisEgyenleg; }
+        public int AktualisEgyenleg { get => aktualisEgyenleg; }
 
         public Szamla(Tulajdonos tulajdonos) : base(tulajdonos) { }
 
