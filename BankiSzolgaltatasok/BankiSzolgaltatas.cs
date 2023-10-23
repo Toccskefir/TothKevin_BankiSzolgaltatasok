@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BankiSzolgaltatasok
 {
-    public class BankiSzolgaltatas
+    public abstract class BankiSzolgaltatas
     {
         private Tulajdonos tulajdonos;
 

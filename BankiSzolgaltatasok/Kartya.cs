@@ -21,7 +21,7 @@ namespace BankiSzolgaltatasok
 
         public bool Vasarlas(int osszeg)
         {
-            return this.szamla.AktualisEgyenleg >= osszeg;
+            return this.szamla.Kivesz(osszeg);
         }
     }
 }
