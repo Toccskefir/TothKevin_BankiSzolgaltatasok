@@ -16,7 +16,10 @@ namespace BankiSzolgaltatasok
 
         public void Befizet(int osszeg)
         {
-            this.aktualisEgyenleg += osszeg;
+            if (osszeg >= 0)
+            {
+                this.aktualisEgyenleg += osszeg;
+            }
         }
 
         public abstract bool Kivesz(int osszeg);
